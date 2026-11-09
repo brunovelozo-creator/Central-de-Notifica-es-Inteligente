@@ -1,0 +1,71 @@
+ATIVIDADE — CENTRAL DE NOTIFICAÇÕES INTELIGENTE
+
+Aluno: Bruno Augusto Verissimo Velozo
+Turma: 3B DEVALD
+Curso: Técnico em Desenvolvimento de Sistemas
+Unidade Curricular: Programação Front-End
+
+
+ETAPA 1 — INVESTIGAÇÃO
+
+1. O que é um Toast e qual sua finalidade?
+
+O Toast é um pequeno aviso que aparece na tela para informar o usuário sobre alguma ação realizada. Ele é útil para mostrar mensagens rápidas sem precisar abrir uma nova janela.
+
+
+2. Qual é a principal diferença entre um Toast e um Modal?
+
+O Toast é uma notificação rápida que normalmente aparece por alguns segundos e não impede o usuário de continuar usando a página. Já o Modal abre uma janela sobre a página e geralmente precisa de uma ação do usuário para ser fechado.
+
+
+3. O Toast aparece automaticamente ou precisa ser ativado?
+
+O Toast precisa ser ativado. Nesta atividade, ele é ativado pelo JavaScript quando o usuário clica em um dos três botões.
+
+
+4. Qual instrução JavaScript permite criar uma instância de Toast?
+
+Podemos criar uma instância usando:
+
+const toast = bootstrap.Toast.getOrCreateInstance(elemento);
+
+Também é possível usar:
+
+const toast = new bootstrap.Toast(elemento);
+
+
+5. Para que serve o método .show()?
+
+O método .show() serve para mostrar o Toast na tela.
+
+
+6. O que significa a opção autohide?
+
+A opção autohide define se o Toast vai desaparecer automaticamente depois de um tempo. Quando ela está como true, o Toast é ocultado automaticamente.
+
+
+7. Qual é a finalidade de delay?
+
+A opção delay define quanto tempo o Toast ficará visível antes de desaparecer automaticamente. Nesta atividade, foi utilizado um delay de 5000 milissegundos, que corresponde a aproximadamente 5 segundos.
+
+
+ETAPA 6 — REFLEXÃO FINAL
+
+1. Qual foi a maior diferença entre programar um Modal e um Toast?
+
+A maior diferença foi a forma como eles são usados. O Toast é mais simples para mostrar mensagens rápidas e pode desaparecer sozinho. O Modal abre uma janela sobre a página e normalmente precisa que o usuário feche ou confirme alguma ação.
+
+
+2. Qual funcionalidade exigiu mais pesquisa?
+
+A funcionalidade que exigiu mais pesquisa foi o Toast, principalmente para entender como criar a instância pelo JavaScript, usar o método show(), configurar o autohide e definir o delay.
+
+
+3. O que foi reaproveitado da atividade anterior?
+
+Foi reaproveitado o conhecimento sobre Bootstrap, principalmente a estrutura da página, Navbar, Cards, Grid, botões e Modal. Também foi reaproveitada a ideia de usar JavaScript para controlar as ações da página.
+
+
+4. Se o sistema precisasse apresentar 20 tipos de notificação, vocês criariam 20 Toasts? Justifiquem.
+
+Não. Eu usaria uma única estrutura de Toast e mudaria o título, a mensagem e outras informações de acordo com a ação realizada. Dessa forma, o código fica menor, mais organizado e mais fácil de alterar.
